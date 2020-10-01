@@ -1,0 +1,82 @@
+<template>
+    <div class="slds-box">
+    <template if:false={loaded}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+    <!-- header starts-->
+    <div class="slds-page-header slds-page-header_record-home">
+        <div class="slds-page-header__row">
+        <div class="slds-page-header__col-title">
+        <div class="slds-media">
+        <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-opportunity">
+            <lightning-icon icon-name="custom:custom102" alternative-text="New note" title="New note"></lightning-icon>
+        </span>
+        </div>
+        <div class="slds-media__body">
+        <div class="slds-page-header__name">
+        <div class="slds-page-header__name-title">
+        <h1>
+        <span>  </span>
+        <span class="slds-page-header__title slds-truncate" title="Acme - 1,200 Widgets">Covid-19 Vaccine Prioritization</span>
+        </h1>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="slds-page-header__col-actions">
+        <div class="slds-page-header__controls">
+        <div class="slds-page-header__control">
+        <ul class="slds-button-group-list">
+        <li>
+            <lightning-button variant="success" label="Calculate" title="Primary action" icon-name="utility:rotate" onclick={handleCalculate} class="slds-m-left_x-small"></lightning-button>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="slds-page-header__row slds-page-header__row_gutters">
+        <div class="slds-page-header__col-details">
+        <ul class="slds-page-header__detail-row">
+        <li class="slds-page-header__detail-block">
+        <div class="slds-text-title slds-truncate" title="Field 1">Score</div>
+        <div class="slds-truncate" ><template if:true={matrix}>
+            <div class="slds-page-header__name-title">
+                <h1>
+                    <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">{matrix.totalscore}</span>
+                </h1>
+            </div></template>
+            </div>
+        </li>
+        <li class="slds-page-header__detail-block">
+            <div class="slds-text-title slds-truncate" title="Field 2 (3)">Priority
+            <div class="slds-truncate">
+                <template if:true={isHigh}><span class="slds-badge slds-theme_error">High</span></template>
+                <template if:true={isMedium}><span class="slds-badge slds-theme_warning">Medium</span></template>
+                <template if:true={isLow}><span class="slds-badge slds-theme_success">Low</span></template>
+            </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    <!-- header ends-->
+        <lightning-layout>
+            <lightning-layout-item size=12> 
+                <template if:true={matrix}>
+                    <template if:true={matrix.criteriaList} for:each={matrix.criteriaList} for:item="criteriaItem">
+                        <template if:true={criteriaItem}>
+                            <c-criteria-item key={criteriaItem.Id} onoptionchange={handleOptionChange} criteria={criteriaItem}></c-criteria-item>
+                        </template>
+                    </template>
+                </template>
+            </lightning-layout-item>
+            
+        </lightning-layout>
+        <br/>
+        <br/>
+    </div>
+</template>

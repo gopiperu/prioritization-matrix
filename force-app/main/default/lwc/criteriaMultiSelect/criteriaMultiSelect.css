@@ -1,0 +1,56 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+
+.priority-low
+{
+	background: rgb(0 112 210);
+}	
+
+.priority-low:hover
+{
+	/*background: #52B7D8;*/
+}
+
+.priority-medium
+{
+	background: #468847;
+}	
+
+.priority-medium:hover
+{
+	background: #356635;
+}	
+.priority-high
+{
+	background: rgb(255 183 93);
+}	
+
+.priority-high:hover
+{
+	background: #ef880b;
+}	
+
+.priority-critical
+{
+    background: #b94a48;
+    color: #fff;
+}
+
+.priority-critical:hover
+{
+    background:#953b39;
+}
+
+.slds-pill__action 
+{
+    color: #F4284E;
+}
+
+a{
+    color: #F4284E;
+}

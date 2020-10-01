@@ -1,0 +1,20 @@
+<template >
+    <div class="CriteriaItem">
+        <lightning-layout>
+            <br/>
+            <lightning-layout-item padding="around-small" size=12 if:true={isPicklist}>
+                <!--div class="slds-page-header__title">{criteria.value}</div-->
+                <div class="slds-text-heading_small">{criteria.value}</div><br/>
+                <c-criteria-select-option onoptionchange={handleChange} criteria-item={criteria} criteria-id={criteria.Id} option-values={criteria.options} current-option={currentOption}></c-criteria-select-option>
+            </lightning-layout-item>  
+            <lightning-layout-item padding="around-small" size=12 if:true={isRange}>
+                <div class="slds-text-heading_small">{criteria.value}</div><br/>
+                <c-criteria-range-select onoptionchange={handleChange} criteria-item={criteria}></c-criteria-range-select>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size=12 if:true={isMultiSelect}>
+                <div class="slds-text-heading_small">{criteria.value}</div><br/>
+                        <c-criteria-multi-select ms-options={criteria.options} criteria-id={criteria.Id} onoptionchange={handleChange} ></c-criteria-multi-select>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

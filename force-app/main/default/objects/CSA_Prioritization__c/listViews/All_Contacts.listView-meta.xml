@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Contacts</fullName>
+    <columns>Contact__c</columns>
+    <columns>Is_Vaccinated__c</columns>
+    <columns>Total_Criteria_Evaluated__c</columns>
+    <columns>Total_score__c</columns>
+    <columns>Vaccinated_Date__c</columns>
+    <columns>Priority__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Contacts</label>
+</ListView>

@@ -1,0 +1,69 @@
+.slds-path__item:before, .slds-path__item:after {
+    content: '';
+    position: absolute;
+    left: unset;
+    right: unset;
+    cursor: pointer;
+}
+
+.slds-path__item {
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+.slds-path__item:first-child,.slds-path__item:last-child {
+    margin-left: 0;
+    border-top-left-radius: unset; 
+    border-bottom-left-radius: unset; 
+	border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    padding-left: .625rem;
+}
+
+.slds-path__nav .slds-is-complete {
+    /*background: #E16032;*/
+}
+
+.slds-path__nav .slds-is-incomplete {
+    /*background: #68CEEE;*/
+}
+
+
+.priority-low
+{
+	background: rgb(0 112 210);
+}	
+
+.priority-low:hover
+{
+	/*background: #52B7D8;*/
+}
+
+.priority-medium
+{
+    background: #08916D;
+}	
+
+.priority-medium:hover
+{
+	background: #356635;
+}	
+.priority-high
+{
+    background: #F59623;
+}	
+
+.priority-high:hover
+{
+	background:#CE6716;
+}	
+
+.priority-critical
+{
+    background: #F4284E;
+}
+
+.priority-critical:hover
+{
+    background:#C11C2F;
+}

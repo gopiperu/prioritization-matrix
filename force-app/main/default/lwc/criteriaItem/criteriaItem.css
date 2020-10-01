@@ -1,0 +1,17 @@
+.optyItem
+{
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: content-box rgb(102, 169, 228);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 0px;
+}
+
+.CriteriaItem {
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 1.5rem;
+}

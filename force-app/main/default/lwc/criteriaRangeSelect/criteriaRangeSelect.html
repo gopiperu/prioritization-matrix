@@ -1,0 +1,11 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="10">
+            <lightning-slider min={criteriaItem.min} max={criteriaItem.max} onchange={handleSliderChange} value={uservalue} variant="label-hidden">
+            </lightning-slider>
+        </lightning-layout-item>
+        <lightning-layout-item size="2">
+            <lightning-input type="number" name="input7" value={uservalue} onchange={handleSliderChange} step="0.01"></lightning-input>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

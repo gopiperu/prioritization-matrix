@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CriteriaEvaluationTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Vaccine_Registration</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Criteria_option_type</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Option_priority</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>CSA_Category__c</members>
+        <members>CSA_Criteria_Evaluation__c</members>
+        <members>CSA_Criteria__c</members>
+        <members>CSA_Prioritization__c</members>
+        <members>CSA_ProductInventory__c</members>
+        <members>CSA_VaccineAssessment__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CSA_Category__c</members>
+        <members>CSA_Criteria_Evaluation__c</members>
+        <members>CSA_Criteria__c</members>
+        <members>CSA_Option__c</members>
+        <members>CSA_Prioritization__c</members>
+        <members>CSA_ProductInventory__c</members>
+        <members>CSA_VaccineAssessment__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Vaccine Help Center</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>Vaccine_Help_Center1</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>Vaccine_Help_Center</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>TriggerHandler</members>
+        <members>TriggerHandler_Test</members>
+        <members>PrioritizationMatrixController</members>
+        <members>ContactPrioritizationController</members>
+        <members>CriteriaEvaluationTriggerHandler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Criteria_Record_Page</members>
+        <members>Category_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Contact-Contact Layout</members>
+        <members>CSA_Category__c-Category Layout</members>
+        <members>CSA_Criteria_Evaluation__c-Criteria Evaluation Layout</members>
+        <members>CSA_Criteria__c-Criteria Layout</members>
+        <members>CSA_Option__c-Option Layout</members>
+        <members>CSA_Prioritization__c-Prioritization Layout</members>
+        <members>CSA_ProductInventory__c-Inventory Level Layout</members>
+        <members>CSA_VaccineAssessment__c-Vaccine Administration Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>criteriaItem</members>
+        <members>breadCrumbs</members>
+        <members>criteriaMultiSelect</members>
+        <members>criteriaRangeSelect</members>
+        <members>criteriaSelectItem</members>
+        <members>criteriaSelectOption</members>
+        <members>multiPickList</members>
+        <members>pickListItem</members>
+        <members>prioritizationMatrix</members>
+        <members>contactPrioritization</members>
+        <members>contactPrioritize</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>49.0</version>
+</Package>

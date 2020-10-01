@@ -1,0 +1,22 @@
+<template>
+    <template if:true={priorityLst} >
+        <template if:true={priorityExist} for:each={priorityLst} for:item="priorityItem">
+            <c-prioritization-matrix key={priorityItem.Id} record-id={priorityItem.Id}></c-prioritization-matrix>
+        </template>
+    </template>
+    <template if:false={priorityExist}>
+        <div class="demo-only" style="height:4rem">
+            <div class="slds-notify_container slds-is-relative">
+            <div class="slds-notify slds-notify_toast slds-theme_warning" role="status">
+            <span class="slds-assistive-text">warning</span>
+            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+            </span>
+            <div class="slds-notify__content">
+            <h2 class="slds-text-heading_small ">Please create a Prioritization record to continue
+            </h2>
+            </div>
+            </div>
+            </div>
+            </div>
+    </template>
+</template>
